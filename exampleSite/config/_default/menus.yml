@@ -1,0 +1,7 @@
+main:
+  - name: About
+    url: /about/
+    weight: -110
+  - name: Posts
+    url: /posts/
+    weight: -100
