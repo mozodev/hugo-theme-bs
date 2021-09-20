@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{- `<!-- /index.html  -->` | safeHTML -}}
+<div class="container">
+  <ul class="list-unstyled">
+  {{ range where .Site.RegularPages "Section" "posts" }}
+    <li><a href="{{.Permalink}}">
+      <h3>{{.Title}} <small>{{.Date.Format "2006-01-02"}}</small></h3>
+    </a></li>
+  {{ end }}
+  </ul>
+</div>
+{{- `<!-- /index.html  -->` | safeHTML -}}
+{{ end }}
