@@ -2,9 +2,6 @@ languageCode: ko-kr
 hasCJKLanguage: true
 title: Just bootstraped blog
 
-themesDir: ../..
-theme: hugo-theme-bs
-
 disableKinds:
   - taxonomy
   - term
