@@ -1,13 +1,11 @@
 {{ define "main" }}
 {{- `<!-- _default/single.html  -->` | safeHTML -}}
-<section id="main" class="layout-single container">
+<section id="main" class="post layout-single container-prose">
   <article id="content">
     <header>
       <h1 id="title">{{ .Title }}</h1>
     </header>
-
     {{ .Content }}
-
   </article>
 </section>
 {{- `<!-- _default/single.html  -->` | safeHTML -}}

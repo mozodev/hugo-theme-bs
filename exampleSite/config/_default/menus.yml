@@ -1,7 +1,7 @@
 main:
-  - name: About
-    url: /about/
-    weight: -110
-  - name: Posts
+  - name: 글
     url: /posts/
+    weight: -110
+  - name: 소개
+    url: /about/
     weight: -100

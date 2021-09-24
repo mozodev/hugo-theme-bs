@@ -33,7 +33,7 @@
   <body class="page{{ if .IsHome }} page--front{{ else }} page{{ delimit (split .Page.RelPermalink "/") "--" "" }}{{ end }}">
     {{ block "header" . }}{{ partial "layout/navbar.html" . }}{{ end }}
     {{ block "main" . }}{{ end }}
-    {{ block "footer" . }}{{ end }}
+    {{ block "footer" . }}{{ partial "layout/footer.html" . }}{{ end }}
     {{ block "pageBottom" . }}{{ end }}
   </body>
 </html>

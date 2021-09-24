@@ -6,15 +6,16 @@ description:
 images:
 
 license:
-  title_of_work: This website
-  link_to_work: $URL
-  createor_of_work: $NAME
-  link_to_creator_profile: $URL
-  year_of_creation: $YEAR
+  title_of_work: 모조로그
+  link_to_work: https://mozo.kr
+  createor_of_work: "@mozodev"
+  link_to_creator_profile: https://github.com/mozodev
+  year_of_creation: 2015
 
 featuredImages:
   - image1.png
   - image2.jpg
 
 googleFonts:
+  - https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap
   - https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;700&display=swap

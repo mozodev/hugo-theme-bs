@@ -1,20 +1,15 @@
 {{ define "main" }}
 {{- `<!-- _default/list.html  -->` | safeHTML -}}
-<main class="layout-list container">
+<main class="layout-list container-prose">
   <article>
     <header>
       <h1>{{.Title}}</h1>
     </header>
-
     {{.Content}}
-
   </article>
-  <ul>
-  <!-- Ranges through content/posts/*.md -->
-  {{ range where .Site.RegularPages "Section" .Section }}
-    <li>
-      <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
-    </li>
+  <ul class="list-unstyled">
+  {{ range .Pages }}
+    {{ .Render "li"}}
   {{ end }}
   </ul>
 </main>
