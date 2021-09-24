@@ -1,23 +1,14 @@
 @import "../node_modules/bootstrap/scss/functions";
-
-/**
- * Colors
- */
-// $body-bg: "" default;
-
-// $container-gutter: "" default;
-// $container-gutte-x: "" default;
-// $container-gutter-sm: "" default;
+@import "../node_modules/bootstrap/scss/variables";
 
 /**
  * typography
  */
-// $font-family-base: "" default;
-// $font-size-base: "" default;
-$black: #000 !default;
+$font-family-sans-serif: '"Gothic A1",' + $font-family-sans-serif;
 
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/root";
+/**
+ * Colors
+ */
+$body-bg: $light;
 
 @import "../node_modules/bootstrap/scss/bootstrap";

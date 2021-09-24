@@ -1,6 +1,8 @@
-languageCode: ko-kr
-hasCJKLanguage: true
 title: Just bootstraped blog
+
+languageCode: ko-kr
+defaultContentLanguage: ko
+hasCJKLanguage: true
 
 disableKinds:
   - taxonomy

@@ -1,22 +1,22 @@
 import { Collapse, Dropdown } from 'bootstrap'
 
-let $ = document.querySelector.bind(document)
-let $$ = document.querySelectorAll.bind(document)
+const $ = document.querySelector.bind(document)
+const $$ = document.querySelectorAll.bind(document)
 
-let vars = {
-  "xs": "0",
-  "sm": "576px",
-  "md": "768px",
-  "lg": "1025px",
-  "xl": "1200px",
-  "xl2": "2560px",
-  "xl3": "5120px",
+/**
+ * Breakpoints.
+ * @see https://getbootstrap.com/docs/5.0/layout/breakpoints/
+ */
+const breakpoints = {
+  "xs": 0, "sm": 576, "md": 768, "lg": 992, "xl": 1200, "xxl": 1400
 }
-
-let mediaDown = (breakpoint) => {
-  return window.matchMedia("(max-width:" + vars[breakpoint] + ")").matches
+const mediaUp = (target) => {
+  return window.matchMedia("(min-width:" + breakpoints[target] + "px)").matches
+}
+const mediaDown = (target) => {
+  return window.matchMedia("(max-width:" + breakpoints[target] - 0.2 + "px)").matches
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  console.log('dom bootstraped!')
+  console.log('bootstraped!', mediaDown('sm'), mediaUp('sm'))
 })

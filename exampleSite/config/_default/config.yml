@@ -1,9 +1,8 @@
-languageCode: ko-kr
-hasCJKLanguage: true
 title: Just bootstraped blog
 
-themesDir: ../..
-theme: hugo-theme-bs
+languageCode: ko-kr
+defaultContentLanguage: ko
+hasCJKLanguage: true
 
 disableKinds:
   - taxonomy
@@ -13,3 +12,6 @@ build:
   writeStats: true
 
 googleAnalytics:
+
+themesDir: ../..
+theme: hugo-theme-bs
