@@ -1,0 +1,1 @@
+{{- $posts := slice -}}{{- range first 5 (where .Site.RegularPages "Section" "posts") }}{{- $post := dict "title" .Title }}{{ $posts = $posts | append .Params }}{{ end -}}{{- $posts | jsonify -}}

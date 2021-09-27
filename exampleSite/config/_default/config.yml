@@ -5,8 +5,8 @@ defaultContentLanguage: ko
 hasCJKLanguage: true
 
 disableKinds:
-  - taxonomy
-  - term
+- taxonomy
+- term
 
 build:
   writeStats: true
@@ -15,3 +15,8 @@ googleAnalytics:
 
 themesDir: ../..
 theme: hugo-theme-bs
+
+outputs:
+  home:
+  - HTML
+  - JSON
