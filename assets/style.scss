@@ -30,6 +30,10 @@ footer {
   a {
     text-decoration: none;
   }
+  &.global {
+    margin-top: 9rem;
+    padding: 1rem 0;
+  }
 }
 .post {
   @include font-size(1.2rem);
