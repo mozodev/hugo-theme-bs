@@ -13,9 +13,6 @@ build:
 
 googleAnalytics:
 
-themesDir: ../..
-theme: hugo-theme-bs
-
 outputs:
   home:
   - HTML

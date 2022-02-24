@@ -1,4 +1,4 @@
-module github.com/mozodev/hugo-theme-bs
+module github.com/mozodev/hugo-theme-bs/exampleSite
 
 go 1.17
 

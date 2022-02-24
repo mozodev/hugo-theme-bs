@@ -1,0 +1,6 @@
+hugoVersion:
+  extended: true
+  min: "0.91.2"
+
+imports:
+- path: github.com/gohugoio/hugo-mod-bootstrap-scss/v5

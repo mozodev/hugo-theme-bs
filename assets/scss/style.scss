@@ -1,5 +1,5 @@
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
+@import "bootstrap/functions";
+@import "bootstrap/variables";
 
 /**
  * typography
@@ -14,7 +14,7 @@ $font-family-base: $font-family-serif;
  */
 $body-bg: $light;
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "bootstrap/bootstrap";
 
 .container-prose {
   @include make-container();

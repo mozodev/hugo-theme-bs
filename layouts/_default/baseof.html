@@ -17,15 +17,14 @@
     <link href="/assets/style.min.css" rel="stylesheet" />
     {{ else }}
       {{ $options := (dict "targetPath" "assets/style.css" "outputStyle" "compressed") }}
-      {{ $style := resources.Get "style.scss" | resources.ToCSS $options }}
-      {{- $options := dict "inlineImports" true }}{{ $style = $style | resources.PostCSS $options -}}
-      {{- if hugo.IsProduction }}{{ $style = $style | minify | resources.PostProcess }}{{ end -}}
+      {{ $style := resources.Get "scss/style.scss" | resources.ToCSS $options }}
+      {{- if hugo.IsProduction }}{{ $style = $style | postCSS (dict "inlineImports" true) | minify | fingerprint | resources.PostProcess }}{{ end -}}
     <link href="{{ $style.RelPermalink }}" rel="stylesheet" />
     {{ end -}}{{- block "headJs" . }}{{ end -}}
     {{- if .Site.Params.themeNoPipe }}
     <script src="/assets/index.min.js" defer></script>
     {{ else }}
-      {{- $js := resources.Get "index.js" | js.Build (dict "targetPath" "assets/index.js") -}}
+      {{- $js := resources.Get "js/index.js" | js.Build (dict "targetPath" "assets/index.js") -}}
       {{- if hugo.IsProduction }}{{ $js = $js | minify }}{{ end -}}
     <script src="{{ $js.RelPermalink }}" defer></script>
     {{ end -}}
